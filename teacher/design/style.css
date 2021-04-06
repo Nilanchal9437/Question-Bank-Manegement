@@ -1,0 +1,78 @@
+#s_register{
+    background: linear-gradient(to right,  #000000 0%,#77cef7 100%);
+    color: #ffffff;
+    border-radius: 10px;
+    /* box-shadow: 0px 2px 2px 0px #756a6a, 0px 16px 12px 0px #2b2525; */
+}
+nav{
+    background: linear-gradient(to right,  #08dae9 0%,#080808 100%);
+}
+h1{
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px #000000, 0px 0px 25px #0c0c0cc4, 0px 0px 5px#330909;
+} 
+
+body{
+    background: linear-gradient(to right, #131f24 0%, #038791 100%);
+    color: #ffffff;
+}
+thead{
+    background: linear-gradient(to right,  #08dae9 0%,#080808 100%); 
+}
+#feed{
+    
+    padding: 5px;
+}
+#feedback{
+    background: linear-gradient(to right, #049da8 0%, #030303 100%);
+}      
+#footer_design{
+    margin-top: 3rem;
+    font-size: 22px;
+}
+#question a{
+    color: rgb(255, 255, 255);
+}
+#scroll_question{
+    overflow-y: scroll;
+    height:12cm;
+    background-color: #eaebee;
+    background: linear-gradient(to right,  #000000 0%,#77cef7 100%);
+  }
+ #scroll_question1{
+    overflow-y: scroll;
+    height:7cm;
+    background: linear-gradient(to right,  #000000 0%,#77cef7 100%);
+ }
+ #collapseExample{
+    color: rgb(253, 252, 252);
+}
+ .modal-title{
+    color:black;
+}
+.modal-body{
+    color:black;
+}
+#question a{
+    color: rgb(255, 255, 255);
+}
+#footer1{
+    background: linear-gradient(to right,  #000000 0%,#77cef7 100%); 
+}
+#footer2{
+    background: linear-gradient(to right,  #08dae9 0%,#080808 100%);
+}
+#mcq_head{
+    background: linear-gradient(to right,  #08dae9 0%,#080808 100%);
+}
+.card{
+    background: linear-gradient(to right, #049da8 0%, #030303 100%);
+    color: white;
+}
+
+table th,td{
+    color: white;
+}
+#table_design td,th{
+    color: white;
+}
