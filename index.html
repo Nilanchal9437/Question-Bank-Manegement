@@ -1,0 +1,418 @@
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="../logo/n.png">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/Animation.css">
+    <title>University</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand text-capitalize" href="index.html"><b><i class="fa fa-university" aria-hidden="true"></i>University Question</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" style="color: aliceblue;" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-users" aria-hidden="true"></i> Registration
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./student/student_registration.html" target="_blank">Student Registration</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="color: aliceblue;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-users" aria-hidden="true"></i> Login
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./teacher/teacher_login.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Teacher Login</a>
+                <a class="dropdown-item" href="./student/student_login.html" target="_blank"><i class="fa fa-sign-in" aria-hidden="true"></i> Student Login</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a type="button" class="nav-link" data-toggle="modal" data-target="#staticBackdrop">
+                <i class="fa fa-comments-o" aria-hidden="true"></i>FeedBack
+                </a>
+
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">FeedBack</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                    <form action="../Admin/FeedBack/Insert.php" method="POST" >
+                    <div class="form-row my-2">
+                        <div class="col-lg-2">
+                            <label>Email</label>
+                        </div>
+                        <div class="col-lg-10">
+                            <input class="form-control" type="email" name="f_email"  placeholder="Enter you email" required>
+                        </div>
+                    </div>
+                    <div class="form-row mb-2">
+                        <div class="col-lg-2">
+                            <label>Rate</label>
+                        </div>
+                        <div class="col-lg-5 ">
+                            <i class="fa fa-star text-success" aria-hidden="true"></i>
+                            <i class="fa fa-star text-success" aria-hidden="true"></i>
+                            <i class="fa fa-star text-success" aria-hidden="true"></i>
+                            <i class="fa fa-star text-success" aria-hidden="true"></i>
+                            <i class="fa fa-star text-success" aria-hidden="true"></i><br />
+                            <i class="fa fa-star text-primary" aria-hidden="true"></i>
+                            <i class="fa fa-star text-primary" aria-hidden="true"></i>
+                            <i class="fa fa-star text-primary" aria-hidden="true"></i>
+                            <i class="fa fa-star text-primary" aria-hidden="true"></i><br />
+                            <i class="fa fa-star text-info" aria-hidden="true"></i>
+                            <i class="fa fa-star text-info" aria-hidden="true"></i>
+                            <i class="fa fa-star text-info" aria-hidden="true"></i><br />
+                            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                            <i class="fa fa-star text-warning" aria-hidden="true"></i><br />
+                            <i class="fa fa-star text-danger" aria-hidden="true"></i><br />
+                        </div>
+                        <div class="col-lg-5">
+                            <input type="radio" name="rate" value="5" required /> Outstanding <br />
+                            
+                            <input type="radio" name="rate" value="4" required /> Excellent <br />
+                            
+                            <input type="radio" name="rate" value="3" required /> Very Good <br />
+                            
+                            <input type="radio" name="rate" value="2" required /> Good <br />
+                            
+                            <input type="radio" name="rate" value="1" required /> Not Bad <br />
+                        </div>
+                    </div>
+                    <div class="form-row mb-2">
+                        <div class="col-lg-2">
+                            <label>Massage</label>
+                        </div>
+                        <div class="col-lg-10">
+                            <textarea class="form-control" name="massage" required></textarea>
+                        </div>
+                    </div>         
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="submit" class="btn btn-primary" name="give">Submit</button>    
+                    </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid mt-2" id="main">
+        <div class="row">
+          <div class="col-12">
+              <div id="stars"></div>
+              <div id="stars2"></div>
+              <div id="stars3"></div>
+            <div class="sky-container m-auto" >
+              <div id="stars"></div>
+              <div id="stars2"></div>
+              <div id="stars3"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+            </div>
+            
+            <div id="title">
+              <span>WELCOME TO QUESTION BANK MANEGEMENT</span>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </header>    
+
+    <!-- About us start -->
+    <section>
+      <div class="container-fluid">
+        <h1 class="text-center text-capitalize pt-5">About us</h1>
+        <hr class="w-25 mx-auto">
+        <div class="row mb-5">
+          <div class="col-lg-6 col-md-6 col-12">
+            <img src="images/convocation.jpg" alt="" id="about" class="img-fluid">
+          </div>
+          <div class="col-lg-6 col-md-6 col-12">
+              <h1 class="text-center text-capitalize mt-2" >Our University</h1>
+              <hr class="w-25">
+              <p class="text-justify">achievements, attitude, banking, be-positive, believe, building-relationship,
+                  business, career-development, class, coach, coaching, college, commerce, commercial, communication,
+                  confidence-quotes, corporate, country, culture, desire, development, dream-big, dreams, economics, 
+                  excellence, excellencemind, faith, fashionable, finance, focus, goals, gratitude, grow, happiness, 
+                  hope, humans, industry, inspiration, inspirational, inspirational-quotes, international, job, kindness, 
+                  knowledge, learning, lesions, life, life-style, love, luxury-life-style, management, mind, mindfulness, 
+                  modern, motivation, motivational-speaker, persistence, personal-branding, personal-development, 
+                  personal-growth, personal-skills-development, personal-transformation, philosophy, podcast, positive, 
+                  positive-attitude, power, programs, quotes, read-books, relationships, romance, school, self-confidence, 
+                  self-esteem, self-improvement, self-motivation, skills, smart, social-media, society, study, success, 
+                  technology, think-big, time, trainer, training, travel, travelling, trust, university</p>    
+          </div>
+       </div>
+     </div>
+    </section>
+    <!-- about us end -->
+
+    
+    <!-- best university start -->
+    <section>
+      <div class="container-fluid">
+        <h1 class="text-center text-capitalize pt-5">Best Universities</h1>
+        <hr class="w-25 mx-auto">
+        <div class="row mb-5">
+          <div class="col-lg-3 col-md-6 col-12 my-2">
+            <div class="card" id="card_design">
+              <img src="./bestuniversity/iim.jpg" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="text-center card-title">IIMB</h5>
+                <p class="card-text">The Indian Institute of Management Bangalore is a leading graduate school of management in Asia.</p>
+                <div class="text-center">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Know More
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">IIMB</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>
+                             A 100-acre oasis in south Bengaluru, the Indian Institute of Management Bangalore (IIMB), 
+                             with its all-stone architecture, lush verdant woods and landscaped gardens, provides an 
+                             idyllic environment to engage in management studies, academics and learning.
+                          </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Modal end-->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 my-2">
+            <div class="card" id="card_design">
+              <img src="./bestuniversity/iiof.jpg" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="text-center card-title">IIT</h5>
+                <p class="card-text">IIT is Indian Institute of Technology is an autonomous public engineering institute that provides engineering.</p>
+                <div class="text-center">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+                    Know More
+                  </button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">IIT</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>
+                            The Indian Institutes of Technology (IITs) are the premier autonomous public technical and research 
+                            universities located across India.They are governed by the Institutes of Technology Act, 1961, which 
+                            has declared them as Institutes of National Importance and lays down their powers, duties, and 
+                            framework for governance.
+                          </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Modal end-->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 my-2">
+            <div class="card" id="card_design">
+              <img src="./bestuniversity/IEC.jpg" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="text-center card-title">IEC</h5>
+                <p class="card-text">IEC University, officially I.E.C. (India Education Centre) University,located at the HIMUDA Education Hub</p>
+                <div class="text-center">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
+                    Know More
+                  </button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">IEC</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>
+                            IEC University, officially I.E.C. (India Education Centre) University, is a private university located 
+                            at the HIMUDA Education Hub, near the village Kallujhanda, Solan district, Himachal Pradesh, India. 
+                            It was established in 2012.IEC University was established by the Himachal Pradesh State Legislature 
+                            under “The IEC University Act” 2012.
+                          </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Modal end-->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 my-2">
+            <div class="card" id="card_design">
+              <img src="./bestuniversity/dow.jfif" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="text-center card-title" >ICE</h5>
+                <p class="card-text">The Imperial College of Engineering was an engineering institution under the Public Works autonomous public engineering</p>
+                <div class="text-center">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4">
+                    Know More
+                  </button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">ICE</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>
+                            located near Bhoranj in Hamirpur district, Himachal Pradesh, India. The university was 
+                            established in 2012 by the Gopi Bai Foundation Trust through the Career Point University
+                            (Establishment & Regulation) Act, 2012.
+                          </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Modal end-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact us -->
+    <section>
+          <div class="container" id="contact">
+            
+            <div class="row ">
+                  <div class="col-lg-12 col-md-12 col-12 mx-auto" style="width: 30rem">
+                    <div class="col-lg-6 mx-auto">
+                      <form action="./Admin/Contact_US/Massage.php" method="POST">
+                        <h1 class="text-center text-capitalize">Contact Us</h1>
+                        <hr class="w-25 mx-auto pt-5">
+                        <div class="form-group">
+                          <label for="c_name">Name</label>
+                          <input type="text" class="form-control" name="c_name" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" name="c_email" id="exampleInputEmail1" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="c_phone">Contact No</label>
+                          <input type="text" class="form-control" name="c_phone" required>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="massage">Message</label>
+                          <textarea class="form-control" name="massage" required></textarea>
+                        </div>
+                        <div class="form-group form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <div class="text-center">
+                          <button type="submit" class="btn btn-primary" name="contact">Send</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+          </div>
+    </section>
+    <!-- Contact us end -->
+
+    <section >
+      <div class="container-fluid bg-secondary mt-4" style="font-size:40px;" id="footer1">
+        <div class="row justify-content-lg-center" >
+          <div class="col-lg-8 col-md-10 col-12 text-center">
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+            <i class="fa fa-youtube-square" aria-hidden="true"></i>
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </div>
+         </div>
+      </div>
+  </section>
+  <section>
+      <div class="container-fluid bg-dark" id="footer2">
+        <div class="row justify-content-lg-center">
+          <div class="col-lg-6 col-md-6 col-12 text-center">
+            <h1 class="text-center">AppStone.in</h1>
+              <a class="text-light">@ 2012 next stack web design University</a>
+          </div>
+        </div>
+      </div>
+ </section>
+    <!-- Footer End -->
+    <script type="text/javascript" src="style/jquary.js"></script>
+    <script type="text/javascript" src="style/bootstrap.min.js"></script>
+    <script type="text/javascript" src="calculator/calculator.js"></script>
+  </body>
+</html>
