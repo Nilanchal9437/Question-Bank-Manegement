@@ -1,0 +1,77 @@
+#carouselExampleFade{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px ;
+    height:5cm;
+    width:5cm;
+}
+body{
+    background: linear-gradient(to right, #131f24 0%, #038791 100%);
+    color: white;
+}
+.card{
+    background: linear-gradient(to right, #049da8 0%, #030303 100%);
+}
+.card-title{
+    color: #ffffff;
+}
+.card-text{
+    color: #ffffff;
+}
+#s_register{
+    background: linear-gradient(to right,  #000000 0%,#77cef7 100%);
+    color: #ffffff;
+    border-radius: 10px;
+}
+nav{
+    background: linear-gradient(to right,  #08dae9 0%,#080808 100%);
+}
+#scroll_question1{
+    overflow-y: scroll;
+    height:7cm;
+    background: linear-gradient(to right,  #000000 0%,#77cef7 100%);
+ }
+
+ 
+#feed{
+    
+    padding: 5px;
+}
+#feedback{
+    background: linear-gradient(to right, #049da8 0%, #030303 100%);
+}      
+#footer_design{
+    margin-top: 3rem;
+    font-size: 22px;
+}
+#card_design{
+    height: 14cm;
+}
+
+h1{
+    color: #fcf4f9;
+    text-shadow: 1px 1px 2px #000000, 0px 0px 25px #0c0c0cc4, 0px 0px 5px#330909;
+} 
+#scroll_question{
+    overflow-y: scroll;
+    height: 10cm;
+    width: 97%;
+    color: #ffffff;
+}
+table td,th{
+    color: #ffffff;
+}
+
+#collapseExample{
+    color: rgb(255, 253, 253);
+}
+thead{
+    background: linear-gradient(to right,  #08dae9 0%,#080808 100%); 
+}
+
+#footer1{
+    background: linear-gradient(to right,  #000000 0%,#77cef7 100%); 
+}
+#footer2{
+    background: linear-gradient(to right,  #08dae9 0%,#080808 100%);
+}

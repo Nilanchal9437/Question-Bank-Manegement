@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/bootstrap.min.css">
+    <link rel="icon" href="../logo/n.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Admin Login</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand text-capitalize"><b> Admin Login </b></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="../index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+                </li>
+              </ul>
+            </div>
+       </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12 mx-auto my-5" id="s_register">
+                    <div class="my-3 text-center">
+                        <h1><i class="fa fa-id-badge" aria-hidden="true"></i> Login </h1>
+                    </div>
+                    <form onsubmit="return validation()" action="./Admin.php" method="POST">
+                      <div class="form-group">
+                          <label>User ID</label>
+                          <input type="text" class="form-control" name="User_ID" placeholder="Enter Your User ID" id="email_id" required>
+                      </div>
+                      
+                      <div class="form-group">
+                          <label>Password</label>
+                          <input type="password"  class="form-control" name="Password" placeholder="Enter Password" id="password_id" required>
+                      </div>
+                      <span id="pass_message" style="color: red;"></span>
+                      <div class="text-center my-2 pb-4">
+                          <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</button>
+                      </div>
+
+                   </form>
+                </div>
+            </div>
+        </div>
+     </section>
+     
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content mx-auto" style="width:66px; height:66px;">
+          <div class="modal-body">
+            <div class="spinner-border text-secondary" role="status">
+               
+             </div>
+           </div>
+         </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="../style/jquary.js"></script>
+    <script>
+      $("button").click(function(){
+        $("#exampleModal").show().delay(3000);
+       });
+    </script>
+    <script type="text/javascript" src="../style/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./Javascript/Login.js"></script>
+</body>
+</html>
