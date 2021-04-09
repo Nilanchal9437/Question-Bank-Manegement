@@ -282,7 +282,7 @@ if(isset($_POST['question_search'])){
         $path = $row['file_location'];
         
         echo "<tr>
-                <td colspan=2><h4><u><a href='./Question/question_edit/$path' target='_blank'>$row[uni_name] Year : $row[year]&nbsp; Question</a></u></h4></td>
+                <td colspan=2><h4><u><a href='../teacher/Question/question_edit/$path' target='_blank'>$row[uni_name] Year : $row[year]&nbsp; Question</a></u></h4></td>
               </tr>
               <tr>  
                 <td>Course : <a>$row[course]</a></td>
@@ -320,7 +320,7 @@ else{
       $path = $row['file_location'];
       
       echo "<tr>
-              <td colspan=2><h4><u><a href='./Question/question_edit/$path' target='_blank'>$row[uni_name] Year : $row[year]&nbsp; Question</a></u></h4></td>
+              <td colspan=2><h4><u><a href='../teacher/Question/question_edit/$path' target='_blank'>$row[uni_name] Year : $row[year]&nbsp; Question</a></u></h4></td>
             </tr>
             <tr>  
               <td>Course : <a>$row[course]</a></td>
